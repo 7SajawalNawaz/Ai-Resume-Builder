@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+*{
+    font-family: "Outfit", sans-serif;
+}
+
+ @theme {
+      --color-custompurple: #8E24AA ;
+ }
+
+@layer base {
+     button{
+        @apply cursor-pointer
+     }
+     input:not([type = 'checkbox']){
+        @apply outline-none focus:ring border border-purple-300 focus:ring-purple-500
+        focus:border-purple-500 rounded-lg
+     }
+     textarea{
+           @apply outline-none focus:ring border border-purple-300 focus:ring-purple-500
+        focus:border-purple-500 rounded-lg resize-none;
+     }
+}
+
