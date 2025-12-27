@@ -18,9 +18,9 @@ app.use(express.json())
 app.use(cors())
 
 // home route
-app.get('/',(req,res)=>{
-  res.send('Hello from backend 😑')
-})
+// app.get('/',(req,res)=>{
+//   res.send('Hello from backend 😑')
+// })
 
 // user routes
 app.use("/api/users" , userRouter)
