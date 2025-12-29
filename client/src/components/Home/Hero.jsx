@@ -8,11 +8,12 @@ const Hero = () => {
   const [menuOpen, setMenuOpen] = React.useState(false);
 
   const logos = [
-    "https://saasly.prebuiltui.com/assets/companies-logo/instagram.svg",
-    "https://saasly.prebuiltui.com/assets/companies-logo/framer.svg",
-    "https://saasly.prebuiltui.com/assets/companies-logo/microsoft.svg",
-    "https://saasly.prebuiltui.com/assets/companies-logo/huawei.svg",
-    "https://saasly.prebuiltui.com/assets/companies-logo/walmart.svg",
+    "/public/apple.svg",
+    "/public/behance.svg",
+    "/public/dropbox.svg",
+    "/public/github.svg",
+    "/public/pinterest.svg",
+    "/public/linkedin.svg",
   ];
 
   return (
@@ -248,7 +249,7 @@ const Hero = () => {
                 key={index}
                 src={logo}
                 alt="logo"
-                className="h-6 w-auto max-w-xs"
+                className="h-12 opacity-40 w-auto max-w-xs"
               />
             ))}
           </div>
